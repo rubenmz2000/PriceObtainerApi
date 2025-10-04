@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using PriceObtainerLibrary.Models;
+using PriceObtainer.Library.Models;
 
 namespace PriceObtainer.DataAccess.Context;
 
@@ -26,7 +26,7 @@ public class PriceObtainerDbContext : DbContext
 
             entity.Property(e => e.Price)
                 .IsRequired()
-                .HasColumnType("decimal(18,2)");
+                .HasColumnType("decimal(18,8)");
 
             entity.HasIndex(e => new { e.Symbol, e.Timestamp });
         });

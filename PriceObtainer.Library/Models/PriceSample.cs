@@ -1,4 +1,4 @@
-namespace PriceObtainerLibrary.Models;
+namespace PriceObtainer.Library.Models;
 
 public class PriceSample
 {
