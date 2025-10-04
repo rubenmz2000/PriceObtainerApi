@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PriceObtainer.Api", "PriceObtainer.Api\PriceObtainer.Api.csproj", "{ACFED2BA-FB0D-4EB4-B5BF-E24F45D2F11E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PriceObtainer.Library", "PriceObtainer.Library\PriceObtainer.Library.csproj", "{DF1A7C05-A15E-4F58-BDB1-2F9C89765531}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PriceObtainer.DataAccess", "PriceObtainer.DataAccess\PriceObtainer.DataAccess.csproj", "{A381AC61-DC6A-4260-A788-A4E13337D94F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ACFED2BA-FB0D-4EB4-B5BF-E24F45D2F11E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACFED2BA-FB0D-4EB4-B5BF-E24F45D2F11E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACFED2BA-FB0D-4EB4-B5BF-E24F45D2F11E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACFED2BA-FB0D-4EB4-B5BF-E24F45D2F11E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF1A7C05-A15E-4F58-BDB1-2F9C89765531}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF1A7C05-A15E-4F58-BDB1-2F9C89765531}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF1A7C05-A15E-4F58-BDB1-2F9C89765531}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF1A7C05-A15E-4F58-BDB1-2F9C89765531}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A381AC61-DC6A-4260-A788-A4E13337D94F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A381AC61-DC6A-4260-A788-A4E13337D94F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A381AC61-DC6A-4260-A788-A4E13337D94F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A381AC61-DC6A-4260-A788-A4E13337D94F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
