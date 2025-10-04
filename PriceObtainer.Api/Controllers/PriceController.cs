@@ -1,17 +1,16 @@
 using Microsoft.AspNetCore.Mvc;
-using PriceObtainerApi.Services;
-namespace PriceObtainerApi.Controllers;
+using PriceObtainer.Library.Services;
+namespace PriceObtainer.Api.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
 public class PriceController : ControllerBase
 {
-    private readonly PriceService _priceService = new();
-    
     [HttpGet]
-    public IActionResult GetPrice()
+    public async Task<IActionResult> GetPrice(string symbol, [FromServices] PriceService priceService)
     {
+        var result = await priceService.GetPriceAsync(symbol);
         
-        return Ok(_priceService.GetPrice());
+        return Ok(result);
     }
 }

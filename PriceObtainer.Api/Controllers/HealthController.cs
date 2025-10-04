@@ -1,7 +1,6 @@
-using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 
-namespace PriceObtainerApi.Controllers;
+namespace PriceObtainer.Api.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]

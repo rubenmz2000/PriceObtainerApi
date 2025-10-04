@@ -1,11 +1,15 @@
-namespace PriceObtainerApi.Services;
+using PriceObtainer.Library.Abstractions;
+using PriceObtainer.Library.Models;
+
+namespace PriceObtainer.Library.Services;
 
 public class PriceService
 {
-    private string BinanceEndpoint = "https://api.binance.com";
+    private readonly IPriceRepository _repo;
+    public PriceService(IPriceRepository repo) => _repo = repo;
+
+    public Task<PriceSample?> GetPriceAsync(string symbol, CancellationToken ct = default) =>
+        _repo.GetLatestAsync(symbol, ct);
     
-    public string GetPrice()
-    {
-        return null;
-    }
+    public void AddPrice(PriceSample sample) => _repo.AddAsync(sample);
 }
